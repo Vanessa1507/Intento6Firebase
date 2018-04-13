@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "933873810680",
+    "firebase_url": "https://universiapp-409f6.firebaseio.com",
+    "project_id": "universiapp-409f6",
+    "storage_bucket": "universiapp-409f6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:933873810680:android:1620742ef2784b14",
+        "android_client_info": {
+          "package_name": "com.example.user.intento6firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "933873810680-3jou016sci0euo3c39jvl2etomq2rm3h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.user.intento6firebase",
+            "certificate_hash": "41da79379fbef23d821eba6430ee7b3be399c8a8"
+          }
+        },
+        {
+          "client_id": "933873810680-unjjjqtehmoantm6928vdg773ucj2sfs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtUIkuEn8dzg9cGBRXo6RwAM5uqOkuqNk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "933873810680-unjjjqtehmoantm6928vdg773ucj2sfs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
