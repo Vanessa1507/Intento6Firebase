@@ -1,7 +1,7 @@
 package com.example.user.intento6firebase.Objetos;
 
 public class Pais {
-    String PAIS_NOMBRE;
+    private String PAIS_NOMBRE;
 
     public Pais() {
     }
