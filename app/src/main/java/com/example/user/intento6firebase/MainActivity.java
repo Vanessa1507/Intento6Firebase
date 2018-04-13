@@ -22,8 +22,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         botonPais = (Button) findViewById(R.id.boton_pais);
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myref = database.getReference(FirebaseReferences.PAIS_REFERENCIA);
-        myref.addValueEventListener(new ValueEventListener() {
+        DatabaseReference myref = database.getReference(FirebaseReferences.TB_PAIS);
+        
+        botonPais= setOnClickListener(new View view){
+            @Override
+            public void onClick (View view){
+                myref.child(FirebaseReferences.PAIS_REFERENCIA).addValueEventstener(new ValueEventListener(){
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 String valor = dataSnapshot.getValue(String.class);
@@ -35,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
                 Log.e("ERROR",databaseError.getMessage());
             }
         });
+            }
+        
+        }):
 
     }
 }
