@@ -11,6 +11,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+Button botonPais;
 public class MainActivity extends AppCompatActivity {
 
 
@@ -19,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        botonPais = (Button) findViewById(R.id.boton_pais);
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myref = database.getReference(FirebaseReferences.PAIS_REFERENCIA);
         myref.addValueEventListener(new ValueEventListener() {
