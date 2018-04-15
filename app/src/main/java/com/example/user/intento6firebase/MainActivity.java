@@ -26,8 +26,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        botonPais = (Button) findViewById(R.id.boton_Pais) ;
-        botonDepartamentos = (Button) findViewById(R.id.boton_Departamentos);
+        botonPais = findViewById(R.id.boton_Pais);
+        botonDepartamentos = findViewById(R.id.boton_Departamentos);
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         final DatabaseReference myrefpais = database.getReference(FirebaseReferences.TB_PAISES);
         final DatabaseReference myrefDep = database.getReference(FirebaseReferences.TB_DEPARTAMETOS);
